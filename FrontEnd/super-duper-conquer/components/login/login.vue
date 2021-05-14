@@ -1,11 +1,13 @@
 <template>
   <div >
-    <v-card raised class="center_class" width="50%" height="50%"  title="welcome">
-      <v-text-field label="Username!" title="username" v-model="username" @enter="enterInSystem(username)"/>
-      <v-btn mx-2 @click="enterInSystem(username)">
-          log in!
-      </v-btn>
-    </v-card>
+      <v-row>
+        <v-text-field label="Username!" title="username" v-model="username" @enter="enterInSystem(username)"/>
+      </v-row>
+      <v-row>
+        <v-btn block @click="enterInSystem(username)">
+            log in!
+        </v-btn>
+      </v-row>
   </div>
 </template>
 
@@ -20,17 +22,10 @@ export default {
     methods: {
 
         enterInSystem(value) {
+            this.$router.push('/mainMenu');
             return value;
         }
     }
 }
 </script>
 
-
-<style scoped>
-.center_class {
-  margin: 20%;
-  border: 3px solid green;
-  padding: 10px;
-}
-</style>

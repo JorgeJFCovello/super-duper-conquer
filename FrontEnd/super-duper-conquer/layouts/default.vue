@@ -1,6 +1,12 @@
 <template>
   <div>
-    <Nuxt />
+    <v-card dark raised class="center_class" width="50%" height="50%"  title="welcome">
+      <v-layout align-center justify-center>
+          <v-flex>
+            <Nuxt />
+          </v-flex>
+      </v-layout>
+    </v-card>
   </div>
 </template>
 
@@ -15,6 +21,7 @@ export default {
     margin: 0 auto;
     min-height: 100vh;
     display: flex;
+    color: #000;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -51,6 +58,7 @@ html {
     Arial,
     sans-serif;
   font-size: 16px;
+  background: #35495e;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -93,5 +101,17 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+
+.center_class {
+  margin: 20%;
+  border: 1px solid 000f;
+  padding: 10%;
+}
+
+.buttom_class {
+  margin-left: 20%;
+  margin-right:20%;
+  padding: 1%;
 }
 </style>
