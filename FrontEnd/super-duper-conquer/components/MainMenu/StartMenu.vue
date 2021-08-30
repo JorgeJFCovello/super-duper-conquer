@@ -2,28 +2,40 @@
     <div>
         <v-row>
             <v-col>
-                <Panel/>
-            </v-col>
-            <v-col>
-                <Panel/>
-            </v-col>
-        </v-row>
-        <v-row>
-            <v-col>
-                <Panel/>
-            </v-col>
-            <v-col >
-                <Panel/>
+                <ButtonLists :buttons="buttons"/>
             </v-col>
         </v-row>
     </div>
 </template>
 
 <script>
-import Panel from '~/components/General/Panel.vue'
+import ButtonLists from '~/components/General/ButtonLists.vue'
 export default ({
   components: {
-    Panel
+    ButtonLists
+  },
+  data() {
+      return {
+        buttons: [ 
+            {
+                name:'Crear Partida',
+                route: 'newGame'
+            },
+            {
+                name:'Buscar Partida',
+                route: 'findGame'
+            },
+            {
+                name:'Opciones',
+                route: 'options'
+            },
+            {
+                name:'Logout',
+                route: 'logout'
+            } 
+        ]
+        }
+      }
   }
-})
+)
 </script>
