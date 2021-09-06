@@ -1,5 +1,7 @@
 export default {
     // Global page headers: https://go.nuxtjs.dev/config-head
+    target: 'static',
+    
     head: {
         title: 'super-duper-conquer',
         htmlAttrs: {
@@ -28,9 +30,6 @@ export default {
     buildModules: [
         // Simple usage
         '@nuxtjs/vuetify',
-
-        // With options
-        ['@nuxtjs/vuetify', { /* module options */ }]
     ],
 
     ssr: false,
