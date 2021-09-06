@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "deploy": "gh-pages -b main -d dist",
+    "deploy": "gh-pages -b main -d build",
     "dev": "nuxt",
     "generate": "nuxt generate",
     "start": "nuxt start",
