@@ -2,7 +2,7 @@ export default {
     // Global page headers: https://go.nuxtjs.dev/config-head
     target: 'static',
     router: {
-        base: '/game/'
+        base: '/super-duper-conquer/'
       },
 
     head: {
