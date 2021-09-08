@@ -30,8 +30,12 @@ export default ({
                 route: 'options'
             },
             {
+                name:'Reglas',
+                route: 'rules'
+            },
+            {
                 name:'Logout',
-                route: 'logout'
+                route: '/'
             } 
         ]
         }

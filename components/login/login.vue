@@ -1,7 +1,7 @@
 <template>
   <div >
       <v-row>
-        <v-text-field label="Username!" title="username" v-model="username" @enter="enterInSystem(username)"/>
+        <v-text-field label="Username!" title="username" v-model="username" @keyup.enter="enterInSystem(username)"/>
       </v-row>
       <v-row>
         <v-btn block @click="enterInSystem(username)">
