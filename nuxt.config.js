@@ -5,7 +5,7 @@ export default {
         port: process.env.PORT || 5000
     },
     router: {
-        base: '/super-duper-conquer/'
+        base: '/'
       },
 
     head: {
